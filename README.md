@@ -67,7 +67,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 
 ## Docker Setup
-# Docker Commands : 
+## Docker Commands : 
 
 - Check the status of `docker` containers status
 
