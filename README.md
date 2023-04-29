@@ -175,3 +175,6 @@ docker logs laravel-docker-php-1
 ```
 
 - Here `laravel-docker-php-1` is the docker container name.
+
+- For more information watch the video :
+**[Laravel Docker](https://youtu.be/WahJ91Nrgn0)**
