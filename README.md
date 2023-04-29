@@ -149,3 +149,29 @@ docker exec laravel-docker-php-1 php artisan
 ```
 
 - Here `laravel-docker-php-1` is the container name and the `php artisan` is the command that run inside that container.
+
+- If you want go inside the container and run commands and do something use the command
+
+```
+docker exec -it <docker-container-name> /bin/sh
+```
+
+- Example : 
+
+```
+docker exec -it laravel-docker-php-1 /bin/sh 
+```
+
+- To see the `docker` container logs you can run the command
+
+```
+docker logs <docker-container-name>
+```
+
+- Example :
+
+```
+docker logs laravel-docker-php-1
+```
+
+- Here `laravel-docker-php-1` is the docker container name.
