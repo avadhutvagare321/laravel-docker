@@ -135,3 +135,17 @@ docker-compose down && docker-compose up
 ```
 docker-compose down && docker-compose up -d
 ```
+
+- To run commands inside docker container
+
+```
+docker exec <docker-container-name> <command-to-run>
+```
+
+- Example : 
+
+```
+docker exec laravel-docker-php-1 php artisan
+```
+
+- Here `laravel-docker-php-1` is the container name and the `php artisan` is the command that run inside that container.
