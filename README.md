@@ -64,3 +64,74 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## Docker Setup
+# Docker Commands : 
+
+- Check the status of `docker` containers status
+
+```
+docker ps
+```
+
+`docker` command we can use globally.
+
+- To manage multiple containers
+
+```
+docker-compose ps
+```
+
+`docker-compose` command works on directory we use. It also checks the Dockerfile in directory as well.
+
+- To check `docker compose` version 
+
+```
+docker compose version
+```
+
+- The command `docker-compose up --build` is used to start Docker containers based on the services defined in a Docker Compose file. The `--build` flag tells Docker Compose to build any images that are defined in the Compose file before starting the containers.
+
+```
+docker-compose up --build
+```
+
+- When you run this command, Docker Compose will look for a `docker-compose.yml` file in the current directory and use it to create and start the containers. If the `--build` flag is specified, it will first build any images that are defined in the Compose file, based on the instructions in their respective Dockerfiles.
+
+- Here is a breakdown of the individual components of the command:
+
+`docker-compose`: This is the command-line tool used to manage Docker containers defined in a Docker Compose file.
+`up`: This command tells Docker Compose to start the containers.
+`--build`: This flag tells Docker Compose to build any images that are defined in the Compose file before starting the containers.
+
+- Overall, running `docker-compose up --build` is a convenient way to start a set of Docker containers defined in a Compose file and ensure that any necessary images are built before they are started.
+
+- The `docker-compose down` command is used to stop and remove the containers, networks, and volumes created by `docker-compose up`.
+
+```
+docker-compose down
+```
+
+- When you run `docker-compose down`, Docker Compose will stop and remove all containers that were created using the `docker-compose up` command, as well as any networks and volumes that were created specifically for those containers.
+
+- The `docker-compose up -d` command is used to start the containers defined in a Docker Compose file in detached mode, which means the containers run in the background and the command prompt becomes available for further commands.
+
+```
+docker-compose up -d
+```
+
+- When you run this command, Docker Compose will start the containers defined in the Compose file and return control to the command prompt. The containers will continue to run in the background, and you can use other commands to manage them as needed.
+
+`-d`: This flag, short for "detached", tells Docker Compose to run the containers in the background.
+
+- Overall, running `docker-compose up -d` is a convenient way to start the containers defined in a Compose file and continue working on the command prompt without being tied to the running containers.
+
+
+```
+docker-compose down && docker-compose up
+```
+
+```
+docker-compose down && docker-compose up -d
+```
