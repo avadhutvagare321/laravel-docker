@@ -178,3 +178,36 @@ docker logs laravel-docker-php-1
 
 - For more information watch the video :
 **[Laravel Docker](https://youtu.be/WahJ91Nrgn0)**
+
+## Bootstrap Auth Scaffolding
+
+- Install Laravel UI
+
+```
+composer require laravel/ui
+```
+
+- Next, you have to install the laravel UI package command for creating auth scaffolding using bootstrap 5. so let's run the bellow command:
+
+```
+php artisan ui bootstrap
+  
+OR
+  
+php artisan ui bootstrap --auth
+```
+
+- Run bellow command for install npm:
+
+```
+npm install
+```
+
+- To compile and bundle your front-end assets, run the following command:
+
+```
+npm run build
+```
+
+- This will compile and bundle your assets using the configuration specified in your Laravel Mix webpack.mix.js file. By default, the compiled assets will be placed in the public directory of your Laravel project.
+
